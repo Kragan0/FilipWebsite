@@ -21,7 +21,20 @@ body {
   font-size: 30px;
 }
 
-/* Rest of page */
+.bg-dark-red {
+  background-color: #021526 !important;
+}
+
+.icon-white path {
+  fill: white;
+}
+
+
+
+.navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 
 .carousel-item img {
   height: 100vh;
@@ -91,6 +104,10 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.section-scroll {
+  scroll-margin: 10rem;
+}
+
 .sections-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -104,13 +121,13 @@ body {
 }
 
 
-  .service-item ul {
-    margin-top: 1rem;
-  }
+.service-item ul {
+  margin-top: 1rem;
+}
 
-  .service-item li {
-    margin-bottom: 0.3rem;
-  }
+.service-item li {
+  margin-bottom: 0.3rem;
+}
 
 
 .pricing-bg {
@@ -135,6 +152,38 @@ body {
 }
 
 @media (min-width: 992px) {
+
+  :root {
+    --banner-h: 40px;
+    /* adjust to your real height */
+  }
+
+  .top-banner {
+    position: sticky;
+    inset: 0 0 auto 0;
+    height: var(--banner-h);
+
+    color: #fff;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    z-index: 1040;
+    padding-top: 0.3rem;
+    padding-right: 6rem;
+
+    /* start in view */
+    transform: translateY(0);
+    opacity: 1;
+
+    /* animate position & opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .banner-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
   .ms-lg-6 {
     margin-left: 6rem !important;
   }
@@ -149,14 +198,14 @@ body {
   }
 
   .navbar-animated {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     transition: padding 0.3s ease, background-color 0.5s ease;
   }
 
   .navbar-animated-scrolled {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .hero-text {
@@ -190,7 +239,7 @@ body {
 
 
   .service-item {
-  transition: 1s;
+    transition: 1s;
   }
 
   .service-item:hover {
@@ -229,6 +278,10 @@ body {
 
 @media (max-width: 992px) {
 
+  .top-banner {
+    visibility: hidden;
+  }
+
   .sm-navbar {
     background-color: rgba(0, 0, 0, 1) !important;
     transition: background-color 0.3s ease;
@@ -245,6 +298,35 @@ body {
   .sm-hide {
 
     font-size: 20px !important;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    top: 50%;
+  }
+
+  .hero-name {
+    padding-bottom: 1rem;
+    ;
+  }
+
+  .hero-text {
+    width: 70%
+  }
+
+  .hero-name {
+    font-size: 25px;
+    margin-top: 0.5rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .starting_phrase_latin {
+    margin-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .starting_phrase_normal {
+    margin-top: 1rem !important;
   }
 
 }

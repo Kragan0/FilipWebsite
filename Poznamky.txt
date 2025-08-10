@@ -12,3 +12,12 @@ JUDr. Filip Geleta je advokát so sídlom v Banskej Bystrici pôsobiaci na celom
                 Od augusta 2021 pôsobí ako správca konkurznej podstaty.
                 JUDr. Filip Geleta aktívne publikuje a vystupuje na právnických vedeckých konferenciách v oblasti
                 trestného práva a správneho trestania.
+
+V slovenskej verzii nechať všetko aj navigáciu v slovenčine
+Pripraviť logo na navbar, tranparenciu
+Pridat Sekciu potrebujete poradiť 
+
+
+Pridat do navigacie kontakt na pravnika, ked klikne uzivatel presmeruje ho na hovory
+Routavanie na kontakt, 
+a
