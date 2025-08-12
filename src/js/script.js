@@ -104,13 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
       applyTranslations(currentLanguage);
     });
 
-  // MAP FOOTER
-  fetch("./src/components/footer-map.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('map-placeholder').innerHTML = html;
-    });
-
   // Banner hide on scroll
   window.addEventListener('scroll', () => {
     const banner = document.querySelector('.top-banner');
