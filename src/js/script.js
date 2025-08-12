@@ -17,7 +17,7 @@ const translations = {
     home: "Home",
     about: "About",
     services: "Services",
-    pricing: "Pricing",
+    pricing: "Price list",
     contact: "Contact",
     details: "Contact details:",
     street: "Street:",

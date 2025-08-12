@@ -257,14 +257,20 @@ body {
     z-index: 0;
   }
 
-  .border-line {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2.5rem;
-    background: linear-gradient(to bottom, transparent, #552121 20%);
-    z-index: 1;
-  }
+.border-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,      /* fully transparent at very top */
+    #552121 20%,         /* fade in to solid */
+    #552121 80%,         /* keep solid through most of the height */
+    transparent 100%     /* fade out to transparent at bottom */
+  );
+  z-index: 1;
+}
 
   .border-line-right {
     right: 0;
