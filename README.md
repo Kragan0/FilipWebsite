@@ -18,7 +18,7 @@ This is the official website of JUDr. Filip Geleta, an attorney based in Banská
 
 ## License
 This project is licensed under a custom license.  
-See [LICENSE.txt](LICENSE.txt) for details.
+See [LICENSE](LICENSE) for details.
 
 ## Author
 **JUDr. Filip Geleta**  
