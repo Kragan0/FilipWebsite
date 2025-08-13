@@ -11,7 +11,10 @@ const translations = {
     city: "Mesto:",
     republic: "Slovenská republika",
     country: "Štát:",
-    number: "Tel. číslo:"
+    number: "Tel. číslo:",
+    ico:"IČO:",
+    dic:"DIČ:",
+    statement:"Zapísaný v zozname advokátov SAK pod č. 8106"
   },
   en: {
     home: "Home",
@@ -24,7 +27,10 @@ const translations = {
     city: "City:",
     republic: "Slovak Republic",
     country: "Country:",
-    number: "Tel. number:"
+    number: "Tel. number:",
+    ico:"Company ID No.:",
+    dic:"Tax Identification No.:",
+    statement:"Registered in the List of Attorneys of SAK under No. 8106"
   }
 };
 
