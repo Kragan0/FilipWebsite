@@ -65,6 +65,9 @@ function initLanguageSwitchers(root = document) {
   });
 }
 
+
+
+
 // ----------------- APP -----------------
 document.addEventListener('DOMContentLoaded', () => {
   const currentLanguage = getLanguage();
@@ -102,6 +105,33 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(html => {
       document.getElementById('footer-placeholder').innerHTML = html;
       applyTranslations(currentLanguage);
+    
+      const MAP_CONSENT_KEY = "mapConsent";
+      const mapWrap = document.getElementById("map-placeholder");
+      const acceptBtn = document.getElementById("accept-map");
+
+      function loadMap() {
+        if (!mapWrap) return;
+        mapWrap.innerHTML = `
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d553.1460267085702!2d19.15355893660104!3d48.73947956826306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4715160181097151%3A0xf4017d48aec80613!2zS3VrdcSNw61ub3ZhIDMzNzkvMjQsIDk3NCAwMSBCYW5za8OhIEJ5c3RyaWNh!5e0!3m2!1ssk!2ssk!4v1754408871373!5m2!1ssk!2ssk"
+            style="border:0; width:100%; height:100%;"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        `;
+      }
+
+      if (localStorage.getItem(MAP_CONSENT_KEY) === "true") {
+        loadMap();
+      } else if (acceptBtn) {
+        acceptBtn.addEventListener("click", () => {
+          localStorage.setItem(MAP_CONSENT_KEY, "true");
+          loadMap();
+        });
+      }
+
     });
 
   // Banner hide on scroll

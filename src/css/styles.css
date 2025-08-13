@@ -29,7 +29,13 @@ body {
   fill: white;
 }
 
-
+.information-list {
+  display: flex;         
+  gap: 2rem;             
+  padding-left: 0;
+  margin: 0;     
+  list-style: none;         
+}
 
 .navbar {
   padding-top: 0.25rem;
@@ -334,5 +340,11 @@ body {
   .starting_phrase_normal {
     margin-top: 1rem !important;
   }
+
+@media (max-width: 768px) {
+  .information-margin {
+    margin-left: 0 !important;
+  }
+}
 
 }
