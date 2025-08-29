@@ -1,3 +1,14 @@
+/* 
+  Custom styles for JUDr. Filip Geleta website
+  © 2025 Advokátska kancelária JUDr. Filip Geleta. All rights reserved.
+
+  Bootstrap framework © 2011–2025 Twitter, Inc.
+  Licensed under MIT License
+  https://getbootstrap.com
+*/
+
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +30,10 @@ body {
 
 .font-30 {
   font-size: 30px;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .bg-dark-red {
@@ -289,6 +304,14 @@ body {
 }
 
 @media (max-width: 992px) {
+
+  .sm-font-about{
+    font-size: 18px;
+  }
+
+  .sm-alignment-left {
+    text-align: left;
+  }
 
   .top-banner {
     visibility: hidden;
